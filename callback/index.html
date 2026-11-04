@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Cortes — conectando</title>
+<style>body{font-family:system-ui,sans-serif;background:#0f1419;color:#e6ebef;padding:40px;line-height:1.6}code{color:#ff6b9a}</style>
+</head>
+<body>
+<h2>Conectando ao Miami Cortes Uploader…</h2>
+<p>Esta página repassa a autorização do TikTok para o programa que roda no computador do dono do canal
+(<code>localhost:8080</code>). Se nada acontecer em alguns segundos, confira se o painel está aberto e clique de novo em
+"Conectar TikTok".</p>
+<script>
+  // repassa ?code=...&state=... para o receptor local do Miami Cortes Uploader
+  location.replace("http://localhost:8080/callback/" + location.search);
+</script>
+</body>
+</html>
