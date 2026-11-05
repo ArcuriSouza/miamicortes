@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Cortes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: uma coluna de leitura, faixa de marca no topo com as duas abas; documento jurídico sóbrio, tom de praia de Miami só no acento */
+:root {
+  --bg: #f6f7f8;
+  --papel: #ffffff;
+  --tinta: #16202a;
+  --suave: #5b6976;
+  --linha: #dfe4e8;
+  --acento: #e2457a;      /* rosa neon de Vice City, usado com moderação */
+  --acento-fundo: #fdeaf1;
+  --display: "Archivo", "Segoe UI", system-ui, sans-serif;
+  --texto: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1419; --papel: #161d24; --tinta: #e6ebef; --suave: #9aa7b3; --linha: #26313b;
+  --acento: #ff6b9a; --acento-fundo: #2a1820; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1419; --papel: #161d24; --tinta: #e6ebef; --suave: #9aa7b3; --linha: #26313b;
+  --acento: #ff6b9a; --acento-fundo: #2a1820; color-scheme: dark }
+
+html, body { margin: 0 }
+body { background: var(--bg); color: var(--tinta); font-family: var(--texto); font-size: 17px; line-height: 1.65; }
+.casca { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+header { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
+.marca { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--acento); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0;
+  text-wrap: balance; }
+  border: 1px solid var(--linha); border-radius: 999px; padding: 7px 16px; background: var(--papel); }
+article { background: var(--papel); border: 1px solid var(--linha); border-radius: 14px; padding: 28px clamp(18px, 4vw, 40px); }
+article h2 { font-family: var(--display); font-weight: 800; font-size: 24px; margin: 0 0 4px; }
+.vigencia { color: var(--suave); font-size: 14px; margin: 0 0 22px; font-family: var(--display); }
+article h3 { font-family: var(--display); font-weight: 700; font-size: 17px; margin: 26px 0 6px; }
+article a { color: var(--acento); }
+article p, article li { margin: 0 0 10px; max-width: 65ch; }
+article ul { padding-left: 22px; margin: 0 0 10px; }
+.resumo { background: var(--acento-fundo); border-radius: 10px; padding: 14px 18px; margin: 0 0 8px; }
+.lingua { font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--suave); margin: 34px 0 6px; padding-top: 22px; border-top: 1px solid var(--linha); }
+code { font-size: 14px; }
+footer { color: var(--suave); font-size: 14px; margin-top: 22px; font-family: var(--display); }
+</style>
+</head>
+<body>
+<div class="casca">
+  <header>
+    <div class="marca">Miami Cortes</div>
+    <h1>Cortes de GTA com crédito aos criadores</h1>
+  </header>
+  <article>
+    <p class="resumo">O Miami Cortes publica cortes curtos, editados e legendados, de lives e vídeos sobre GTA 6 e GTA RP, sempre com o crédito do criador original.</p>
+    <p>Canal no YouTube: <a href="https://www.youtube.com/@cortesmiami">youtube.com/@cortesmiami</a></p>
+    <h3>Documentos</h3>
+    <ul>
+      <li><a href="../termos-de-uso.html">Termos de Uso</a></li>
+      <li><a href="../politica-de-privacidade.html">Política de Privacidade</a></li>
+    </ul>
+    <p class="lingua">English</p>
+    <p>Miami Cortes publishes short edited and captioned clips of streams and videos about GTA 6 and GTA RP, always crediting the original creator. See the <a href="../termos-de-uso.html">Terms of Service</a> and the <a href="../politica-de-privacidade.html">Privacy Policy</a>.</p>
+  </article>
+</div>
+</body>
+</html>
